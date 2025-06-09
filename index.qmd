@@ -1,0 +1,46 @@
+---
+title: "Statistical Methods for Modeling Disease Spillover and Spillback"
+author: "Andy Hoegh"
+date: "June 17, 2025"
+format: revealjs
+editor: source
+---
+
+```{r}
+library(knitr)
+```
+
+
+## Goals
+
+1. Detail data structure in all its "glory"
+2. Share progress on scholarly products
+3. Invite collaboration on existing work and explore additional research questions
+
+
+# 1. Data Overview 
+
+## How the Radar Works (simplified)
+
+1. Radar in action:
+
+{{< video radar_vid.MOV width="800" height="800">}}
+
+## How the Radar Works (simplified)
+
+2. Raw Image: 1 per second
+
+```{r}
+#| fig-align: center
+knitr::include_graphics('RawImage.png')
+```
+
+
+
+## Acknowledgements
+
+- This material is based upon work supported by the U.S. Geological Survey
+under Grant/Cooperative Agreement number G21AC10748-00.
+
+- This material is based upon work supported by the National
+Science Foundation under Grant Numbers EF-2133763 and EF-2231624.
