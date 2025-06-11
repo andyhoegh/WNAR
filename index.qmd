@@ -2,8 +2,12 @@
 title: "Statistical Methods for Modeling Disease Spillover and Spillback"
 author: "Andy Hoegh"
 date: "June 17, 2025"
-format: revealjs
+format: 
+  revealjs:
+    scrollable: true
 editor: source
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r}
@@ -11,29 +15,158 @@ library(knitr)
 ```
 
 
-## Goals
+# DISEASE ECOLOGY PRIMER
 
-1. Detail data structure in all its "glory"
-2. Share progress on scholarly products
-3. Invite collaboration on existing work and explore additional research questions
+## What is Disease Ecology?
 
+- the ecological study of host-pathogen interactions within the context of their environment and evolution.
 
-# 1. Data Overview 
+- a field of study that investigates the relationship between pathogens (like bacteria, viruses, and parasites) and their hosts, as well as the influence of the environment and evolution on disease transmission and spread.
 
-## How the Radar Works (simplified)
+- the mechanisms, patterns, and effects of host-pathogen interactions, particularly those of infectious diseases.
 
-1. Radar in action:
+- how pathogens interact with their host environment and how they are able to colonize new hosts, sometimes becoming more or potentially less pathogenic. 
 
-{{< video radar_vid.MOV width="800" height="800">}}
-
-## How the Radar Works (simplified)
-
-2. Raw Image: 1 per second
+## Spillover and Spillback
 
 ```{r}
 #| fig-align: center
-knitr::include_graphics('RawImage.png')
+#| fig-cap: "Image from Plowright et al. 'Pathways to zoonotic spillover.' Nature Reviews Microbiology 2017."
+knitr::include_graphics('cheese.png')
 ```
+
+# HENDRA VIRUS IN AUSTRALIA
+
+## Flying Foxes
+
+```{r, out.width = "100%"}
+#| fig-align: 'center'
+knitr::include_graphics("bats.png")
+```
+
+## Flying Foxes
+
+```{r, out.width = "100%"}
+#| fig-align: 'center'
+#| fig-cap: "Image from Vivian Jones, Bat Conservation International"
+
+knitr::include_graphics("ghff.jpg")
+```
+## Hendra Virus System
+
+```{r, out.width = "100%"}
+#| fig-align: 'center'
+knitr::include_graphics("spillover.png")
+```
+
+## Hendra Virus System: What we know
+
+```{r, out.width = "100%"}
+#| fig-align: 'center'
+knitr::include_graphics("nature.png")
+```
+
+## NSF: Rules of Life
+
+```{r, out.width = "100%"}
+#| fig-align: 'center'
+knitr::include_graphics("Rol.png")
+```
+
+## Research Question
+
+- Can we identify and model behavioral differences (across the spectrum of food availability) that may impact the risk of HeV spillover?
+
+```{r, out.width = "100%"}
+#| fig-align: 'center'
+knitr::include_graphics("robin.png")
+```
+
+## {background-image="roost.png"}
+
+
+## {background-video="Flyout.m4v" background-video-loop="true" background-video-muted="true"}
+
+
+## {background-video="radar_vid.MOV" background-video-loop="true" background-video-muted="true"}
+
+## {background-image="observation.png"}
+
+## {background-image="Mar5_pres.png" background-size="contain"}
+
+## {background-image="animation.gif" background-size="contain"}
+
+## {background-image="Mar13_pres.png" background-size="contain"}
+
+## {background-image="animation_mar13.gif" background-size="contain"}
+
+
+# CoV SURVEILLANCE IN NORTH AMERICA
+
+## NA BAT - Bat One Health
+
+```{r}
+#| fig-align: center
+#| fig-cap: "This information is preliminary and is subject to revision. It is being provided to meet the need for timely best science. The information is provided on the condition that neither the U.S. Geological Survey nor the U.S. Government shall be held liable for any damages resulting from the authorized or unauthorized use of the information."
+knitr::include_graphics('NAB.png')
+```
+
+## Research Questions
+
+1.  What factors impact CoV prevalence in Mexican Free Tailed bats?
+
+2.  Is there evidence of viral spillback in Mexican Free Tailed bats?
+
+```{r}
+#| fig-align: center
+#| fig-width: 100
+knitr::include_graphics('TABR.jpg')
+```
+
+## Study Area
+
+```{r}
+#| fig-align: center
+knitr::include_graphics('Map.png')
+```
+
+## Statistical Challenges
+
+1. Preferential Sampling
+2. Pooled Testing
+
+```{r, out.width = "100%"}
+#| fig-align: center
+#| fig-width: 100
+
+knitr::include_graphics('Patrick.png')
+```
+
+##  What factors impact CoV prevalence in Mexican Free Tailed bats? {.nostretch}
+
+```{r}
+#| fig-align: center
+#| fig-width: 100
+knitr::include_graphics('Figure3.png')
+```
+
+##  What factors impact CoV prevalence in Mexican Free Tailed bats? {.nostretch}
+
+```{r}
+#| fig-align: center
+#| fig-width: 100
+knitr::include_graphics('Figure4.png')
+```
+
+
+## Is there evidence of viral spillback in Mexican Free Tailed bats?
+
+```{r}
+#| fig-align: center
+#| fig-width: 100
+knitr::include_graphics('TABR.jpg')
+```
+
 
 
 
